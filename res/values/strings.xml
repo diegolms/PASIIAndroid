@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, ProjetoAndroidActivity!</string>
+    <string name="app_name">ProjetoAndroid</string>
+    <string name="clubes">Clubes</string>
+    <string name="inserir_clubes">Inserir Clube</string>
+    <string name="campeonatos">Campeonatos</string>
+    <string name="jogos">Jogos</string>
+    <string name="usuarios">Usuários</string>
+    <string name="boloes">Bolões</string>
+    <string name="load_clubes">Carregando Clubes...</string>
+    <string name="inserindo_clubes">Inserindo novo clube...</string>
+
+</resources>
