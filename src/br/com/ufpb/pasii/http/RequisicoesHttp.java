@@ -32,6 +32,8 @@ import org.apache.http.util.EntityUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import br.com.ufpb.pasii.core.Constants;
+
 import android.util.Log;
 
 public class RequisicoesHttp {
@@ -48,11 +50,11 @@ public class RequisicoesHttp {
 				retorno = EntityUtils.toString(resEntityGet);
 			}
 		} catch (ClientProtocolException e) {
-			Log.d("RequisiçõesHTTP", e.getMessage());
+			Log.d(Constants.TAG, e.getMessage());
 		} catch (IOException e) {
-			Log.d("RequisiçõesHTTP", e.getMessage());
+			Log.d(Constants.TAG, e.getMessage());
 		} catch (Exception e) {
-			Log.d("RequisiçõesHTTP", e.getMessage());
+			Log.d(Constants.TAG, e.getMessage());
 		}
 		return retorno;
 	}
@@ -69,11 +71,11 @@ public class RequisicoesHttp {
 			String response = httpClient.execute(postMethod,resonseHandler);
 			return response;
 		} catch (ClientProtocolException e) {
-			Log.d("RequisiçõesHTTP", e.getMessage());
+			Log.d(Constants.TAG, e.getMessage());
 		} catch (IOException e) {
-			Log.d("RequisiçõesHTTP", e.getMessage());
+			Log.d(Constants.TAG, e.getMessage());
 		} catch (Exception e) {
-			Log.d("RequisiçõesHTTP", e.getMessage());
+			Log.d(Constants.TAG, e.getMessage());
 		}
 		return null;
 	}
