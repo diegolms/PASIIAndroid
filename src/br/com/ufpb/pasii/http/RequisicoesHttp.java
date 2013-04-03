@@ -65,7 +65,7 @@ public class RequisicoesHttp {
 		try {
 			DefaultHttpClient httpClient = new DefaultHttpClient();
 			ResponseHandler <String> resonseHandler = new BasicResponseHandler();
-			HttpPost postMethod = new HttpPost("http://bolaoshow.herokuapp.com/service/clubes");			
+			HttpPost postMethod = new HttpPost(url);			
 			postMethod.setHeader( "Content-Type", "application/json" );
 			postMethod.setEntity(new ByteArrayEntity(json.toString().getBytes("UTF8")));
 			String response = httpClient.execute(postMethod,resonseHandler);
